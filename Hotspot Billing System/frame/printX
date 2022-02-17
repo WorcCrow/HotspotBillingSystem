@@ -1,0 +1,7 @@
+<select id="printSize" onkeypress="printCount(event)">
+  <option value="Letter">Letter</option>
+  <option value="Folio">Folio</option>
+  <option value="A4">A4</option>
+  <option value="Other">Other</option>
+</select>
+<input type="text" class="printInput" id="printCount" onkeypress="printCountF(event)" onclick="this.select()" value="QUANTITY">

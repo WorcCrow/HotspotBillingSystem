@@ -1,0 +1,93 @@
+<HTA:APPLICATION 
+border="none" 
+caption="no" 
+showInTaskbar="yes" 
+navigable="yes"
+contextmenu="no"
+innerborder="no"
+singleInstance="yes"
+icon="media/icon.ico"
+applicationName="Hotspot Billing System"
+scroll="no"/>
+<!------------------------------------------------------------------------------------------------------>
+
+<html>
+	<script type="text/javascript">
+			resizeTo(300, screen.height - 40);
+			moveTo(screen.width - 300, 0);
+	</script>
+		
+	<head>
+		<title>Hotspot Billing System</title>
+		<link id="styles" rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/function.js"></script>
+		<script src="js/Base64.js"></script>
+	</head>
+	
+<!------------------------------------------------------------------------------------------------------>
+
+	<body onload="clearScreen();define()">
+		<img  id="background" class="background" src="media/background.png">
+		<script type="text/javascript">
+			id("background").width = document.body.offsetWidth 
+			id("background").height = document.body.offsetHeight
+		</script>
+		<div id="mainframe" align="center" onmousemove="statusupdate()">
+			<br>
+			<div style="font-size:70px;color:#4682B4;">NH NET</div>
+			<span style="font-size:25px;color:#4682B4;">WIFI BILLING SYSTEM</span>
+			<div id="screen" class="not-allowed" onclick="clearScreen()">
+				<table width="100%">
+					<tr>
+						<td class="propertyname">RENT :</td>
+						<td class="propertyvalue"><span id="day" title="Day/s">00</span>d:<span id="hour" title="Hour/s">00</span>h:<span id="minute"title="Minute/s" contenteditable="true" maxlength="2">00</span>m</td>
+					</tr>
+					<tr>
+						<td class="propertyname">PRICE :</td>
+						<td class="propertyvalue"><span id="totalprice">0</span>.00 php</td>
+					</tr>
+					<tr>
+						<td class="propertyname">CODE :</td>
+						<td class="propertyvalue"><span id="code">000000</span></td>
+					</tr>
+				</table>
+			</div>
+			<input id="time" type="text" onkeyup="statusupdate()" onkeypress="numberOnly(event)" maxlength="2" value="0" onclick="this.select()"/>
+			<select id="unit" onchange="inputFocus();statusupdate()">
+				<option value="minutes">Minute/s</option>
+				<option value="hours">Hour/s</option>
+				<option value="days">Day/s</option>
+				
+			</select>
+			<div class="pointer" id="generateButton" onclick="generate()">
+				<img class="background" src="media/generateButton.png" width="100%" height="100%"/>
+				<div style="position:absolute;top:10px;left:0px;text-align:center;width:100%;color:white">Generate Code</div>
+			</div>
+			<div id="grid" align="left">
+				<span class="gridbutton" id="todayreport" onclick="todayReport()">Today</span>
+				<span class="gridbutton" onclick="todaySales()">Report</span>
+				<div id="gridcontent">
+				</div>
+				<div id="gridfooter">
+					<table width="100%">
+						<tr>
+							<td width="20%"  align="left">DATE: </td>
+							<td width="80%" id="sysdate" align="right" style="color:white"></td>
+						</tr>
+					</table>	
+					<table width="100%">
+						<tr>
+							<td width="50%" align="left">TODAY SALES: </td>
+							<td width="50%" align="right" style="color:white"><span id="todaysales">0</span> PHP</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<script type="text/javascript">
+				h = document.body.offsetHeight
+				id("grid").style.height = (h - 20) - 331;	
+				id("gridcontent").style.height = ((h - 20) - 331) - 75;	
+			</script>
+			</div>
+	</body>
+</html>

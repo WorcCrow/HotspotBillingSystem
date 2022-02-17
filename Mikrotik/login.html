@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>WorcHotspot</title>
+		<script src="js/md5.js"></script>
+	</head>
+
+	<body>
+		<form id="DeviceInfo" action="http://192.168.0.4/login.php" method="post">
+			<input type="hidden" id="mac" name="mac" />
+			<input type="hidden" id="macpass" name="macpass" />
+			<input type="hidden" id="error" name="error" />
+			<input type="hidden" id="redirect" name="redirect" />
+			<input type="hidden" id="mikrotikLogin" name="mikrotikLogin" />
+		</form>
+$(if chap-id)		
+		<script type="text/javascript">
+			document.getElementById("mac").value = '$(mac)';
+			document.getElementById("macpass").value = hexMD5('$(chap-id)' + '$(mac)' + '$(chap-challenge)');	
+		$(if error)
+			document.getElementById("error").value = '$(error)';
+		$(endif)
+			document.getElementById("redirect").value = '$(link-orig)';
+		
+			document.getElementById("mikrotikLogin").value = '$(link-login-only)';
+			document.getElementById("DeviceInfo").submit();
+		</script>
+$(endif)
+	</body>
+</html>

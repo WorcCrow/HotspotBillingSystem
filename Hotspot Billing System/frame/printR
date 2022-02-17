@@ -1,0 +1,69 @@
+<div align="center">
+	<font size="4px" color="gray" id="reportDate"></font>
+	<table>
+		<tr>
+			<th class="reportR">Total Usage:</th>
+			<td class="reportR" id="statsTPaper">0 PCS</td>
+		</tr>
+		<tr>
+			<th class="reportR" style="border:1px black;border-style:none none solid none">Total Sales:</th>
+			<td class="reportR"id="statsTPrice" style="border:1px black;border-style:none none solid none">0 PCS</td>
+		</tr>
+		<tr>
+			<th class="reportR">Paper Usage</th>
+			<td class="reportR""></td>
+		</tr>
+		<tr>
+			<td class="reportR">Letter:</td>
+			<td class="reportR"id="statsLetter">0 PCS</td>
+		</tr>
+		<tr>
+			<td class="reportR">Folio:</td>
+			<td class="reportR"id="statsFolio">0 PCS</td>
+		</tr>
+		<tr>
+			<td class="reportR" style="border:1px;border-style:none none solid none">A4:</td>
+			<td class="reportR" id="statsA4" style="border:1px;border-style:none none solid none">0 PCS</td>
+		</tr>
+		<tr>
+			<td class="reportR">Print:</td>
+			<td class="reportR" id="statsPrint">0 PCS</td>
+		</tr>
+		<tr>
+			<td class="reportR" style="border:1px black;border-style:none none solid none">Xerox:</td>
+			<td class="reportR" id="statsXerox" style="border:1px black;border-style:none none solid none">0 PCS</td>
+		</tr>
+		
+		<tr>
+			<th class="reportR">Sale Status</th>
+			<td class="reportR""></td>
+		</tr>
+		<tr>
+			<td class="reportR">Letter:</td>
+			<td class="reportR"id="statsLetterP">0 PHP</td>
+		</tr>
+		<tr>
+			<td class="reportR">Folio:</td>
+			<td class="reportR"id="statsFolioP">0 PHP</td>
+		</tr>
+		<tr>
+			<td class="reportR" style="border:1px;border-style:none none solid none">A4:</td>
+			<td class="reportR" id="statsA4P" style="border:1px;border-style:none none solid none">0 PHP</td>
+		</tr>
+		<tr>
+			<td class="reportR" >Print:</td>
+			<td class="reportR" id="statsPrintP">0 PHP</td>
+		</tr>
+		<tr>
+			<td class="reportR" style="border:1px black;border-style:none none solid none">Xerox:</td>
+			<td class="reportR" id="statsXeroxP" style="border:1px black;border-style:none none solid none">0 PHP</td>
+		</tr>
+		
+		<tr>
+			<td class="reportR"></td>
+			<td class="reportR">
+				<button onclick="listPrint()" style="background-color:darkred;border:none;width:100%">BACK</button>
+			</td>
+		</tr>
+	</table>
+</div>

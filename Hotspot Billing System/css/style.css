@@ -1,0 +1,89 @@
+body{
+	margin:0px;
+}
+.pointer{
+	cursor:pointer;
+}
+.not-allowed{
+	cursor:not-allowed;
+}
+.background{
+	top:0;
+	left:0;
+	position:relative;
+	z-index;-10;
+}
+#mainframe{
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+	text-align:center;
+	z-index:100;
+}
+#screen{
+	background-color:lightblue;
+	width:255px;
+	height:110px;
+	border: double blue 2px;
+	overflow:auto;
+}
+#time{
+	text-align:center;
+	font-size:25px;
+	width:118px;
+	background-color:lightblue;
+}
+.propertyname{
+	font-size:25px;
+	text-align:center;
+	width:40%;
+}
+.propertyvalue{
+	font-size:25px;
+	text-align:right;
+	width:60%;
+}
+.timebutton{
+	width:75px;
+	height:50px;
+	font-size:20px;
+}
+#unit{
+	font-size:25px;
+	width:130px;
+	background-color:lightblue;
+}
+#generateButton{
+	position: relative;
+	width:255px;
+	height:50px;
+	font-size:25px;
+}
+#grid{
+	width:255px;
+}
+#gridcontent{
+	background-color:lightblue;
+	width:100%;
+	overflow:auto;
+}
+#gridfooter{
+	background-color:#5499C7;
+	width:100%;
+	height:50px;
+	overflow:auto;
+}
+.gridbutton{
+	background-color:#4682B4;
+	width:115px;
+	font-size:20px;
+	text-align:center;
+}
+.contentheader{
+	text-align:center;
+	width:50%;
+}.contentdata{
+	text-align:center;
+	width:50%;
+}

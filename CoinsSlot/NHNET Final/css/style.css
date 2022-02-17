@@ -1,0 +1,25 @@
+body{
+	font-family: "Times New Roman";
+}
+#frame{
+	font-family: "Times New Roman";
+	background-image:url("../media/background.png");
+	height:400px;
+	width:300px;
+	border:1px white solid;
+	color:black;
+	font-size:25px
+}
+.portalButton{
+	font-family: "Times New Roman";
+	font-weight:bold;
+	width:70%;
+	height:30px;
+	font-size:15px;
+	text-align:center;
+}
+#screen{
+	background-color:lightblue;
+	width:250px;
+	height:200px;
+}
